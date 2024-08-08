@@ -1,0 +1,26 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "outDir": "dist",
+
+    "lib": [
+      // Tapestry claims they support the ECMA-262 specification which
+      // is actually ES2024, but that's not a `lib` value
+      "ES2023",
+
+      // Add the `fetch` API types, so we can ensure this package matches
+      "DOM"
+    ],
+
+    // Strictness Settings
+    "strictNullChecks": true,
+
+    // Output as ESM
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    // Emit Type Defs
+    "declaration": true,
+    "declarationMap": true
+  }
+}

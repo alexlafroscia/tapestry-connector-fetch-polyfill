@@ -1,4 +1,16 @@
 {
-  "name": "tapesty-fetch-polyfill",
+  "name": "@alexlafroscia/tapestry-connector-fetch-polyfill",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./install": "./dist/install.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/tapestry-connector-runtime": "npm:@alexlafroscia/tapestry-connector-type-defs@^1.0.0",
+    "typescript": "^5.5.4"
+  },
   "packageManager": "yarn@4.0.2"
 }
